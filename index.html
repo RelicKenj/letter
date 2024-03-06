@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Mail Letter Design</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url('flower.avif');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .letter-container {
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.7); /* Adding some transparency */
+      border: 2px solid #000;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a shadow */
+      overflow: hidden; /* Hides the overflow content */
+    }
+    
+    .letter-content {
+      transition: transform 0.5s ease;
+      transform-origin: bottom; /* Changed to bottom */
+      transform: translateY(100%); /* Changed from translateY(0) */
+      padding-top: 20px;
+    }
+    
+    .letter-container:hover .letter-content {
+      transform: translateY(0); /* Changed from translateY(100%) */
+    }
+    
+    .letter-header {
+      text-align: center;
+    }
+    
+    .letter-stamp {
+      margin-top: 10px;
+      color: #666;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="letter-container">
+  <div class="letter-header">
+    <h2>Dear BUBBA KONG SUPER GANDAAA!,</h2>
+  </div>
+  <div class="letter-content">
+    <p>
+      Hi ba Happy 6thMonthsarry iknow we've been throug a lot, thankyou for always supporting me and helping me sa lahat lahat bb iknow lagi me makulit but thankyou po talaga for the things that you have done for me/saaten again po happy monthsary i love youuuuuuu so so muchh MWAAAAA!!!! 
+    </p>
+    <p>
+      Sincerely,<br>
+      Bubba
+    </p>
+  </div>
+  <div class="letter-stamp">I love you!</div>
+</div>
+
+</body>
+</html>
